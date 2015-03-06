@@ -35,17 +35,32 @@
 
 <p>Starting Stylus watch and Browser-sync on Static Server</p>
 
-<p>stylus -w foldername  </p>
+<p>Stylus and Browser-sync:</p>
+
+<p>Starting Stylus watch and Browser-sync on Static Server
+stylus -w foldername</p>
 
 <p>browser-sync start --proxy "testweb.dev" --files "<em>.php, css/</em>.css, js/*.js"</p>
 
-<p>browser-sync start --proxy "event-registration.dev" --files "<em>.php, css/</em>.css, js/*.js"</p>
-
 <p>Starting Stylus watch and Browser-sync on Static Server</p>
 
-<p>stylus -w foldername </p>
+<p>stylus -w foldername
+browser-sync start --server --files "css/<em>.css, js/</em>.js, *.html"</p>
 
-<p>browser-sync start --server --files "css/*.css, *.html"</p>
+<p>browser-sync start --proxy "mydrupalsite.dev" --files "themes/bartik/css/<em>.css"
+browser-sync start --server --files "css/</em>.css"</p>
+
+<p>// single file
+files: "app/css/style.css"</p>
+
+<p>// multiple files
+files: ["app/css/style.css", "app/css/ie.css"]</p>
+
+<p>// watch all files under app/css (including sub directories)
+files: "app/css/**"</p>
+
+<p>// multiple globs
+files: ["app/css/<em>.css", "app/</em><em>.</em>.html", "app/js/*<em>/</em>.js"]</p>
       </section>
     </div>
 
